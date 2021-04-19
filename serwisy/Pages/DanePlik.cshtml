@@ -1,0 +1,21 @@
+﻿@page
+@model serwisy.Pages.DanePlikModel
+@{
+
+    @foreach (var produkt in Model.Produkty)
+    {
+        <p>
+            @produkt.Id
+        </p>
+        <p>
+            @produkt.Maker
+        </p>
+        <p>
+            @produkt.Title
+        </p>
+        <p>
+            @produkt.Desc
+
+        </p>
+    }
+}

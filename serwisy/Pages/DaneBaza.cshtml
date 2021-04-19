@@ -1,0 +1,19 @@
+﻿@page
+@model serwisy.Pages.DaneBazaModel
+@{
+    @foreach (var item in Model.Produkty)
+    {
+        <p>
+            @Html.DisplayFor(modelItem => item.Id)
+        </p>
+        <p>
+            @Html.DisplayFor(modelItem => item.Maker)
+        </p>
+        <p>
+            @Html.DisplayFor(modelItem => item.Title)
+        </p>
+        <p>
+            @Html.DisplayFor(modelItem => item.Desc)
+        </p>
+        }
+        }
